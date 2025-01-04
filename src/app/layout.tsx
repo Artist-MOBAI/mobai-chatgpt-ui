@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import TitleBar from "@/components/TitleBar";
 
 export const metadata: Metadata = {
   title: "MOBAI CHATGPT UI",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <TitleBar />
+        {children}
+      </body>
     </html>
   );
 }

@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "dotenvx run -- next dev --turbopack",
+    "build": "dotenvx run -- next build",
+    "start": "dotenvx run -- next start",
+    "lint": "dotenvx run -- next lint"
   },
   "dependencies": {
-    "firebase": "^11.1.0",
+    "@dotenvx/dotenvx": "^1.32.0",
+    "@tauri-apps/api": "^2.2.0",
     "next": "15.1.3",
+    "openai": "^4.77.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
